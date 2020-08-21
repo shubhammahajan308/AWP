@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .fa {
+            padding: 2px;
+            font-size: 20px;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        #id1 {
+            background-image: url(https://picsum.photos/seed/picsum/1000/500);
+
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-position: center;
+            object-fit: cover;
+        }
+    </style>
+    <script type="text/javascript">
+        function submit() {
+            var a = document.getElementById("id2").value;
+            var b = document.getElementById("id3").value;
+            if (a.trim() == "" || b.trim() == "") {
+                alert("Invalid Credentials");
+                return false;
+            }
+            else {
+
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="id1"
+        style=" background-color: brown;   display: flex;justify-content: center;align-items:center ;height: 100vh;">
+        <div
+            style=" background-color:white;border-radius: 20px ;display:flex; flex-direction: column; align-items:center;justify-content:center ;height:80vh;width: 70vh ;border: 5px rgb(71, 63, 133) solid;">
+            <div style="font-family: cursive;font-weight: bold;color: royalblue;">Login Form</div>
+
+            <form onsubmit="return submit();" action="example.html">
+                <div style=" display: flex;justify-content: flex-start ; margin-left: 5px;  padding: 10px;">Username
+                </div>
+
+                <div><input id="id2" type="text" name="" placeholder="Enter your username"></div>
+                <div style="padding:10px">Password</div>
+                <div><input id="id3" type="password" name="" placeholder="Enter your password"></div>
+                <div style="padding:5px">
+                    <input type="checkbox" name"" placeholder="">Remember me
+                </div>
+                <div style="padding:5px"><input type="checkbox">Keep me logged in</div>
+                <div><button type="submit" name="">Login</button></div>
+            </form>
+            <div>
+                <h5 style="margin-bottom: 2px;"> Social Media Buttons</h5>
+
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook">
+                    <a href="https://www.facebook.com/"></a>
+                </a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
