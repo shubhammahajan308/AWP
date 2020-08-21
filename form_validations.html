@@ -60,6 +60,20 @@
             object-fit: cover;
         }
     </style>
+    <script type="text/javascript">
+        function submit() {
+            var a = document.getElementById("id2").value;
+            var b = document.getElementById("id3").value;
+            if (a.trim() == "" || b.trim() == "") {
+                alert("Invalid Credentials");
+                return false;
+            }
+            else {
+
+                return true;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -68,18 +82,19 @@
         <div
             style=" background-color:white;border-radius: 20px ;display:flex; flex-direction: column; align-items:center;justify-content:center ;height:80vh;width: 70vh ;border: 5px rgb(71, 63, 133) solid;">
             <div style="font-family: cursive;font-weight: bold;color: royalblue;">Login Form</div>
-            <form>
+
+            <form onsubmit="return submit();" action="example.html">
                 <div style=" display: flex;justify-content: flex-start ; margin-left: 5px;  padding: 10px;">Username
                 </div>
 
-                <div><input type="text" name="" placeholder="Enter your username" required></div>
+                <div><input id="id2" type="text" name="" placeholder="Enter your username"></div>
                 <div style="padding:10px">Password</div>
-                <div><input type="text" name="" placeholder="Enter your password" required></div>
+                <div><input id="id3" type="password" name="" placeholder="Enter your password"></div>
                 <div style="padding:5px">
                     <input type="checkbox" name"" placeholder="">Remember me
                 </div>
                 <div style="padding:5px"><input type="checkbox">Keep me logged in</div>
-                <div><button>Login</button></div>
+                <div><button type="submit" name="">Login</button></div>
             </form>
             <div>
                 <h5 style="margin-bottom: 2px;"> Social Media Buttons</h5>
