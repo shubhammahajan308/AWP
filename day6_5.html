@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="day6_5.js"></script>
+</head>
+
+<body>
+    <div
+        style="display: flex;flex-direction: column;align-items: center;justify-content: center;height: 50vh;font-size: 30px;">
+        <div>Someone has posted something</div>
+        <div><input id="inputid1" type="text" name="" placeholder="comment here"></div>
+        <div style="padding-top:5px">
+            <button id="likeid" onclick="Like()">Like</button>
+            <button onclick="comment()">comment now</button>
+        </div>
+        <div id="commentBox">
+            <div id="commentId"
+                style="display: flex;justify-content:space-between;align-items: center; visibility: hidden;">
+                <div>
+                    comment
+                </div>
+                <button onclick="deleteComment(this)">Delete
+
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
