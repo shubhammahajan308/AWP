@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .myclass1 {
+            height: 10vh;
+            background-color: black;
+            color: white;
+
+        }
+
+        .myclass2 {
+            height: 60vh;
+            background-color: black;
+            color: cornsilk;
+            display: flex;
+
+        }
+
+        .myclass21 {
+
+            background-color: black;
+            color: cornsilk;
+
+            flex: 1;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        .myclass22 {
+
+
+            color: cornsilk;
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .myclass23 {
+
+            color: cornsilk;
+
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .myclass24 {
+
+            color: cornsilk;
+
+            flex: 1;
+
+        }
+
+        .myclass {
+            height: 200vh;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header part-->
+    <div class="myclass1" style="display:flex;justify-content: flex-end;align-items:center;">
+        <div style="background-color: blanchedalmond;"><img
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTg2cHgiIGhlaWdodD0iNDJweCIgdmlld0JveD0iMCAwIDE4NiA0MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTg2IDQyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik04Mi4zLDI1LjZINzAuMXYyLjhsMC40LDBsMCwwYzAuMS0wLjQsMC44LTEuMiwxLjctMS4yYzAsMCwyLjYsMCwyLjcsMGMwLDAuMSwwLDE0LjMsMCwxNC4zaDIuNw0KCQljMCwwLDAtMTQuMiwwLTE0LjNjMC4xLDAsMi44LDAsMi44LDBjMC45LDAsMS41LDAuNSwxLjYsMWwwLDAuMWwwLjQsMEw4Mi4zLDI1LjZMODIuMywyNS42TDgyLjMsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMi44LDI0LjcsMi44LDI0LjcsMi44LDI0LjdDMSwyNi41LDAsMjkuMSwwLDMxLjYNCgkJYzAsMi45LDEuMiw1LjUsMy4yLDcuM2MyLDEuOCw0LjcsMi44LDcuNSwyLjhjMS41LDAsNC40LTAuMyw3LjMtMmwwLjEtMC4xbDAuMy00bC0wLjUtMC4xbC0wLjEsMC4yYy0yLjEsNC4zLTUuMyw0LjMtNi42LDQuMw0KCQljLTUuNSwwLTgtNC42LTgtOC44YzAtNC4xLDIuNS04LjMsOC04LjNjMS43LDAsNC44LDAuNiw2LjQsNC4zbDAuMSwwLjJsMC41LTAuMkwxOCwyMy4xbC0wLjEtMC4xYy0yLjYtMS4xLTQuNy0xLjYtNi44LTEuNg0KCQlDNy43LDIxLjUsNC44LDIyLjYsMi44LDI0Ljd6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTIxLjEsMjUuNkwyMS4xLDI1LjZMMjEsMjZsMCwwYzAuMiwwLjEsMC41LDAuNywwLjUsMS40bDAsMTRoMi42YzAsMCwwLTcuMSwwLTcuMmMwLjEsMCwxLjEsMCwxLjEsMA0KCQljMSwwLjEsMS40LDAuNywyLDEuNmMwLDAsMC4xLDAuMSwwLjEsMC4xbDAuMywwLjZjMC42LDAuOSwxLjMsMi4yLDIuMSwzLjRjMC42LDAuOSwxLjMsMS4zLDIuMiwxLjVjMC42LDAuMSwxLjksMC4xLDIuNC0wLjENCgkJYzAsMCwwLjYtMC4xLDAuNi0wLjFsMC4yLTAuMWwtMC44LTAuMmMtMC4zLTAuMS0wLjgtMC4zLTEuNS0xLjFjLTAuNC0wLjUtMS4xLTEuNi0yLjEtMy4yYzAsMC0xLTEuNi0xLTEuNmMwLDAsMCwwLDAsMA0KCQljLTAuMy0wLjQtMC43LTEtMS41LTEuNWMxLjUtMC41LDIuOS0xLjgsMi45LTMuOGMwLTAuNi0wLjEtMS43LTEuMS0yLjZjLTEtMC45LTIuNS0xLjQtNC42LTEuNEwyMS4xLDI1LjZMMjEuMSwyNS42eiBNMjUuNiwyNy4xDQoJCWMyLjcsMC4xLDIuOCwyLjQsMi44LDIuN2MwLDIuMy0xLjcsMy4xLTMuMSwzLjFjMCwwLTAuOSwwLTEuMSwwYzAtMC4xLDAtNS42LDAtNS43QzI0LjUsMjcuMSwyNSwyNywyNS42LDI3LjF6Ii8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTQ4LDI1LjZMNDgsMjUuNmwwLDAuNGwwLDBjMC4yLDAuMSwwLjQsMC43LDAuNCwxLjJsMCwxNC4yaDQuNWMzLDAsNS40LTAuOSw3LjEtMi43DQoJCWMxLjQtMS41LDIuMi0zLjQsMi4yLTUuNWMwLTEuMi0wLjQtMy4xLTEuNi00LjZjLTEuNi0yLTQtMy4xLTcuMy0zLjFMNDgsMjUuNkw0OCwyNS42eiBNNTEuMSwyNy4yYzAuMSwwLDEuNCwwLDEuNCwwDQoJCWMwLjQsMCwxLjMsMCwyLDAuMWM0LjQsMC43LDQuOSw0LjQsNC45LDZjMCwxLjMtMC4yLDMuMS0xLjMsNC42QzU3LDM5LjMsNTUuMyw0MCw1Myw0MGMtMC41LDAtMS4yLDAtMS45LDANCgkJQzUxLjEsMzkuOCw1MS4xLDI3LjMsNTEuMSwyNy4yeiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik02Ny43LDI1LjZoLTMuMWwwLDAuNGwwLDBjMC4zLDAuMSwwLjUsMC43LDAuNSwxLjNsMCwxNC4xaDIuNkw2Ny43LDI1LjZMNjcuNywyNS42TDY3LjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNMTIwLjcsMjUuNmgtMy4xbDAsMC40bDAsMGMwLjMsMC4xLDAuNSwwLjcsMC41LDEuM3YxNC4xaDIuNkwxMjAuNywyNS42TDEyMC43LDI1LjZMMTIwLjcsMjUuNnoiLz4NCgk8cGF0aCBmaWxsPSIjMDAzNjYyIiBkPSJNNDQuNiwyNS42aC04LjhsMC4xLDAuNGwwLDBjMC4yLDAuMSwwLjUsMC43LDAuNSwxLjRsMCwxNGg4LjhsMC42LTIuOGwtMC40LTAuMWwtMC4xLDAuMg0KCQljLTAuNywxLjEtMS41LDEuMy00LDEuM2MtMC45LDAtMS44LTAuMS0yLjQtMC4xYzAtMC4xLDAtNi4zLDAtNi40YzAuMSwwLDQuNSwwLDQuNSwwVjMyYzAsMC00LjMsMC00LjUsMGMwLTAuMSwwLTQuOCwwLTQuOQ0KCQljMC4xLDAsMy42LDAsMy42LDBjMC44LDAsMS43LDAuOCwxLjgsMS4zbDAsMC4xbDAuNCwwTDQ0LjYsMjUuNkw0NC42LDI1LjZMNDQuNiwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xNTcuNCwyNS42aC04LjhsMCwwLjRsMCwwYzAuMiwwLjEsMC41LDAuNiwwLjUsMS40bDAsMTRoOC44bDAuNi0yLjhsLTAuNC0wLjFsLTAuMSwwLjINCgkJYy0wLjcsMS4xLTEuNSwxLjMtNCwxLjNjLTAuOSwwLTEuOC0wLjEtMi40LTAuMWMwLTAuMSwwLTYuMywwLTYuNGMwLjEsMCw0LjUsMCw0LjUsMFYzMmMwLDAtNC4zLDAtNC41LDBjMC0wLjEsMC00LjgsMC00LjkNCgkJYzAuMSwwLDMuNiwwLDMuNiwwYzEsMCwxLjcsMC44LDEuNywxLjN2MC4xbDAuNCwwTDE1Ny40LDI1LjZMMTU3LjQsMjUuNkwxNTcuNCwyNS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik05MCwyMi43Yy0wLjksMC43LTIsMS45LTIuMSw0YzAsMCwwLDAsMCwwLjFjMCwyLjUsMS42LDMuOSw0LjIsNS4yYzAsMCwwLDAsMCwwYzAuMSwwLjEsMC4zLDAuMiwxLDAuNQ0KCQljMi4yLDEuMSwzLjcsMS45LDMuNyw0LjFjMCwwLjgtMC4zLDEuOS0xLjEsMi43Yy0wLjcsMC43LTEuNiwxLTIuNywxYy0zLjMsMC00LjUtMi45LTQuOC00LjJsLTAuMS0wLjJsLTAuNiwwLjFsMC4yLDQuMUw4OCw0MA0KCQljMS4xLDAuNiwyLjgsMS42LDUuNCwxLjdjMS44LDAsMy42LTAuNyw0LjktMmMxLjEtMS4xLDEuNy0yLjUsMS43LTRjMC0zLjMtMi40LTQuNi00LjktNS45bC0wLjUtMC4zYy0yLjYtMS4zLTMuOC0yLjEtMy44LTMuNw0KCQljMC0xLjEsMC45LTIuOSwzLjEtMi45YzIuNiwwLDQsMiw0LjMsMy4ybDAuMSwwLjJsMC42LTAuMWwtMC4yLTMuNmwtMC4xLTAuMWMtMS41LTEtMy40LTEuMi00LjItMS4yQzkyLjYsMjEuNCw5MS4xLDIxLjksOTAsMjIuN3oNCgkJIi8+DQoJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTEyNSwyOS42TDEyNSwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGMwLDAsMC44LDAuNCwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuOSwwLjYtMi4xLDIuNC0yLjENCgkJYzIuMSwwLDMsMS42LDMuMiwyLjRsMC4xLDAuMmwwLjUtMC4xbC0wLjItMi45bC0wLjEtMC4xYy0xLjItMC44LTIuNy0wLjktMy4zLTAuOUMxMjcuNSwyNS41LDEyNSwyNi45LDEyNSwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMzYuOCwyOS42YzAsMi4yLDEuMywzLjMsMy40LDQuNGwwLjgsMC40YzEuNywwLjgsMi44LDEuNCwyLjgsM2MwLDAuMy0wLjEsMS4yLTAuOCwyDQoJCWMtMC41LDAuNS0xLjIsMC44LTIuMSwwLjdjLTIuNSwwLTMuNC0yLTMuOC0zLjFsLTAuMS0wLjJsLTAuNSwwLjFsMC4xLDMuM2wwLjEsMC4xYzAuOCwwLjUsMi4yLDEuMyw0LjMsMS4zYzEuNCwwLDIuOS0wLjYsMy45LTEuNg0KCQljMC45LTAuOSwxLjMtMiwxLjMtMy4yYzAtMi44LTEuOS0zLjgtMy45LTQuOGMwLDAtMC40LTAuMi0wLjQtMC4yYy0yLjItMS4xLTIuOS0xLjYtMi45LTIuOGMwLTAuNSwwLjItMS4xLDAuNi0xLjUNCgkJYzAuNC0wLjQsMS0wLjYsMS43LTAuNmMyLjEsMCwzLDEuNiwzLjIsMi40bDAuMSwwLjJsMC41LTAuMWwtMC4yLTIuOWwtMC4xLTAuMWMtMS4yLTAuOC0yLjctMC45LTMuMy0wLjkNCgkJQzEzOS40LDI1LjUsMTM2LjgsMjYuOSwxMzYuOCwyOS42eiIvPg0KCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xMTQuMiwyNS42bC0yLjEsMGwwLDAuNGwwLDBjMC4xLDAuMSwwLjQsMC4zLDAuNCwxLjNsMCw5YzAsMS43LTAuNiwzLjgtMy43LDMuOGMtMi45LDAtMy41LTEuNy0zLjUtNC4zDQoJCWwwLTEwLjJoLTMuM2wwLDAuNGwwLDBjMC4yLDAuMSwwLjYsMC41LDAuNiwxLjR2OC40YzAsNS4yLDMuNCw1LjgsNiw1LjhjMS4zLDAsNS40LTAuNCw1LjQtNS4zTDExNC4yLDI1LjZMMTE0LjIsMjUuNnoiLz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iIzAwMzY2MiIgZD0iTTE4MC4xLDIxLjFjMS45LDAuNiwzLjgsMS40LDUuOSwyLjZjLTUuMS04LjQtMTQuMS0xNy41LTIzLTIzLjRjMi4zLDIuMyw2LDcuMyw3LDEyLjYNCgkJCUMxNzMuNiwxNS41LDE3NywxOC4zLDE4MC4xLDIxLjF6Ii8+DQoJCTxwYXRoIGZpbGw9IiMwMDM2NjIiIGQ9Ik0xODAuMSwyMS4xYy00LjQtMS40LTguMS0xLjUtMTAuOC0xLjJjMS0yLjMsMS4xLTQuNywwLjctN2MtNi43LTQuOC0xNC4yLTktMjEuMy0xMi4xDQoJCQljNS4yLDMuNSwxMSwxMy44LDEzLjQsMjQuOGM1LjItMS41LDEzLjEtMi42LDIzLjQsMC45QzE4My44LDI0LjcsMTgyLDIyLjksMTgwLjEsMjEuMXoiLz4NCgkJPHBhdGggZmlsbD0ibm9uZSIgZD0iTTE2OS45LDEyLjljMC40LDIuMywwLjMsNC43LTAuNiw3YzIuOC0wLjMsNi41LTAuMiwxMC44LDEuMkMxNzcsMTguMywxNzMuNiwxNS41LDE2OS45LDEyLjl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo="
+                alt=""> </div>
+        <div style="padding: 4px;"><i class="fa fa-search"></i> Search</div>
+        <div><i class="fa fa-world-wide-web"></i> India| EN</div>
+        <div>1</div>
+        <div>1</div>
+
+    </div>
+    <div class="myclass" ">
+        <!-- main part-->
+        <div  style=" display:flex; background-color: yellowgreen; flex:1">
+        <div
+            style=" display: flex;flex: 1;background-color: violet;justify-content: center;align-items: center;font-size: 40px;">
+            We are here for you.
+
+            We greatly value the trust you place in Credit Suisse. Please rest assured that our focus and commitment
+            during this challenging time remains on serving you.
+        </div>
+        <div style="flex: 1;background-color: blue;">
+            <img src="paradeplatz2.jpg" alt="Girl in a jacket" />
+
+        </div>
+    </div>
+
+    <div style=" display:flex; background-color: yellowgreen; flex:1">
+        <div style="flex: 1;background-color:tomato;background-size: cover;">
+            <img src="iaf-full-width.jpg" alt="s" /></div>
+        <div
+            style=" display:flex;flex: 1;background-color: whitesmoke;justify-content: center;align-items: center;font-size: 40px;">
+            Responsible investing
+            Generating returns. Sustainably.
+            We believe that you can make a positive impact on society and the environment without sacrificing financial
+            returns. Our sustainable finance and impact investing products allow investors to generate returns while
+            driving a positive change.
+
+        </div>
+    </div>
+    <div style=" display:flex; background-color: yellowgreen; flex:1">
+        <div style="flex: 1;background-color:brown;"><img src="article-archive-new-full-width.jpg"> </div>
+        <div
+            style="display:flex;flex: 1;background-color: teal;justify-content: center;align-items: center;font-size: 40px;">
+            <div style="display: flex;"> <strong>Credit Suisse at a glance</strong></div>
+            Founded in 1856 with headquarters in Zurich, Switzerland, Credit Suisse has operations in over 50
+            countries.
+        </div>
+    </div>
+    </div>
+    <div class=" myclass2">
+        <div class="myclass21">
+            <div style="display :flex;flex: 1 ;font-size: 16px;padding: 30px;">INDIA</div>
+            <div style="display :flex;flex: 1 ;font-size: 15px;padding:15px">Contact and Find us</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Contact Us</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Locations</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Credit Suisse AG Mumbai Bank Branch</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Escalation Process</div>
+        </div>
+
+        <div class="myclass22">
+            <div style="display :flex;flex: 1 ;font-size: 15px;padding:15px">Products&services</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">For enterpreneurs</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">For Individuals & Families</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">For Corporate & Institutional Investors
+            </div>
+        </div>
+        <div class="myclass23">
+            <div style="display :flex;flex: 1 ;font-size: 15px;padding:15px">Careers</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Our Business</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Our People</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">At work</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Career Opportunities</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Search & Apply</div>
+        </div>
+        <div class="myclass24">
+            <div style="display :flex;flex: 1 ;font-size: 15px;padding:15px">About us</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Our company</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Media & news</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Investor relations</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Reports & research</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Events</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Articles & stories</div>
+            <div style="display :flex;flex: 1 ;font-size: 21px;padding:15px">Contacts & services</div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
